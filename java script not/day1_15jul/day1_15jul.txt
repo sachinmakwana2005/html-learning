@@ -1,0 +1,82 @@
+HTML and CSS - website 
+
+What is Website - collection of well structured and organized webpages
+What is WebPage - page / electronic document which run on browser 
+
+HTML - browser understands 
+markup language 
+to design the webpage
+tim berner lee  
+
+to make our webpage presentable /styling - css 
+
+two types of websites - 
+1. static website  => HTML and CSS  (no user interaction)
+2. Dynamic website => User Interaction /functionality /behavior => HTML , CSS and Javascript 
+
+
+computer - binary language (0 and 1)
+
+Why Javascript - to make our webpage Dynamic, to provide user interaction , to implement functionality , DOM manipulation
+
+ what is Javascript = scripting language which in interpret checks code line by line at runtime by other program (web browser) 
+ 
+ scripting language - we write script (set of stmt) 
+
+ programming language - we write program (set of stmt)
+
+Operating system - 
+CPU - brain  -> CU + ALU  
+
+user -------> OS ----> Hardware 
+
+programming language -> 
+create program ---->compile (error checking ) ->  run (execute)
+                    whole program check
+                    throw errors 
+                    complier
+
+
+scripting language -------> run (interpret - line by line code checking if any error on line 2 then stop )
+
+
+how to use Javascript -
+1. Internal  -> <script></script> => head or body tag
+2. external -> .js => <script src="">/script>
+
+<link href="path" rel="stylesheet">
+<br> -> empty tag / non container tag 
+<title></title> => paired tag / container tag
+
+<br></br> 
+<br/> => self closing tag 
+=============================================================
+
+features -
+1. open source and cross platform  -(free and can use on all os)
+2. event  -> action fire -> ex.  click 
+3. object -> button (html elememt) 
+4. function > block of code to perform a specific task 
+=================================================================
+Javascript is based on object.
+Javascript is case sensitive - uppercase and lowercase different 
+===============================================================
+
+Javascript Browser Object - 
+1. window object 
+2. window.document object 
+3. window.console object
+
+
+Object have some properties and functions.
+
+1. window - alert() => window.alert()
+
+=============================================================================
+When we load webpage in the browser then browser create a DOM tree of our webpage.
+DOM - document object model 
+================================================================================
+keyword 
+variable 
+event 
+user defined function 

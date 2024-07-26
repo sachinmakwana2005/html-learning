@@ -1,0 +1,109 @@
+2010 till - javascript client side scripting 
+nodejs -  2010 Ryan Dhal 
+runtime environment to execute/run javascript outside the browser (console)
+using nodejs we can write server side script in javascript.
+nodejs - lightweight , open source (free) , cross platform (all OS) 
+
+Node.js is a cross-platform, open-source JavaScript runtime environment that can run on Windows, Linux, Unix, macOS, and more. Node.js runs on the V8 JavaScript engine, and executes JavaScript code outside a web browser. Node.js lets developers use JavaScript to write command line tools and for server-side scripting.
+window and document object won't work.
+
+console object 
+console.log()
+
+every browser uses a javascript engine.
+google chrome - v8 
+edge - chakra 
+firefox - spidermonkey 
+=====================================================================
+javascript is static typed/strongly typed or dynamic typed/lossely typed
+
+int a = 10 //static typed/strongly typed 
+let a =10 //dynamic typed/lossely typed
+a="hello"
+
+===================================================================
+operators - 
+a+b => + (operator) , (a,b => operands)
+1. arthimetic => + , - ,* , /, % , **
+2. relational / comparison =>, >, <, >=,<=, ==, !=, ===, !==
+3. logical operator => and (&&) , or (||) , not (!)
+4. assignment operator => = , +=, -=, *=, /=,%=, **=
+5. increment and decrement - ++ ,--
+6.ternary/conditional operator - ?:
+7. nullish operator - ??
+8. typeof() and instanceof 
+
+three categories -
+1. unary - 1 operands (++,--,typeof(),!)
+2. binary - 2 operands
+3. ternary -3 operands (?:)
+
+
+120/10 => 12
+120%10 => 0
+123%10 => 3
+2%5 = 2
+2/5 = 0.4
+2**3 => 2 power 3  => 2*2*2 => 8
+3**2 => 3*3= 9 
+
+relational -  return true or false
+let a=10, b= 5 
+console.log(a>b) //true 
+console.log(5 < 20) //true
+console.log(5 < 5) //false
+console.log(5 <= 5) //true
+console.log(5 == 5) //true
+console.log(5 == "5") //true   num == string  (check value only)
+console.log(5 === "5") //false (Checks value and datatype)
+console.log(5 != 4) //true 
+console.log(5 != 5) //false  
+console.log(5 !== "15") //true  
+
+===================================================
+logical operator - 
+A           B       A && B          A||B
+F           F          F            F
+F           T          F            T
+T           F          F            T
+T           T          T            T
+
+let n1=5,n2=10
+let result = n1<=5 && n2==10
+
+A       !A
+T       F
+F       T
+
+True - any nonzero value - 10 , 10.20, "hello" , true , "0","false" etc.
+False - false , 0 
+
+let a = 20
+console.log(!a) // !(20)//!(true)=> false
+==============================================================
+assignment operator - R to L 
+
+let n1 = 10
+n1 = n1 + 5 // n1 = 15 (n1 +=5 )
+console.log(n1)
+n1 = n1-2 //(n1 -=2) => 13
+n1 = n1*2 //(n1 *=2) =>26
+n1 = n1/13 // (n1 /=13)=> 2
+n1 =  n1 % 3 // (n1 %=3) => 2
+n1 = n1 ** 3 // n1 **=3 => 8 
+
+==================================================================
+increment and decrement operator - ++ ,-- (++ => increase by 1 , -- => decrease by 1)
+
+postfix - a++  ,a-- (use value and then increase/decrease it in the memory)
+prefix - ++a ,--a (increase/decrease first then use it further)
+
+let x = 5 
+let y //undefined
+y = x++ // y=5 ,x=6
+console.log(`x=${x} and y=${y}`)
+
+===============================================
+ternary operator
+functions 
+decision making stmt 

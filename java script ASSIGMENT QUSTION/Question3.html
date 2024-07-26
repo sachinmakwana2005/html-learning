@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>question-3</title>
+</head>
+<body>
+    <h3>Number1: 
+        <span id="num1"></span>
+    </h3>
+    <h3>Number2: 
+        <span id="num2"></span>
+    </h3>
+    <div>
+        <button type="button" ondblclick="swap()">Double Clicked</button>
+    </div>
+    <script>
+        let a = prompt('Enter Num1');
+        let b = prompt('Enter Num2');
+        document.getElementById('num1').innerHTML = a;
+        document.getElementById('num2').innerHTML = b;
+        function swap() {
+            document.getElementById('num1').innerHTML = b;
+            document.getElementById('num2').innerHTML = a;
+        }
+    </script>
+</body>
+</html>

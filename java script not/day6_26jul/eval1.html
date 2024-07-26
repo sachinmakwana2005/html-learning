@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    body{
+        justify-content: center;
+        display: flex;
+        margin-top: 50px;
+    }
+
+    .box{
+        height: 300px;
+        width: 300px;
+        border: 1px solid black;
+        padding: 40px 20px 40px 20px;
+        background-color: bisque;
+    }
+
+    #result{
+        margin: 20px 0 0 120px;
+    }
+</style>
+<body>
+    <div class="box">
+
+        
+    
+<label for="Num1">Enter num1</label>
+<input type="text" id="Num1"> <br> <br>
+<label for="Num2">Enter num2</label>
+<input type="text" id="Num2"><br> <br>
+<label for="">operations</label>
+<input type="button" value="+" onclick="fun('+')"> 
+<input type="button" value="-" onclick="fun('-')"> 
+<input type="button" value="*" onclick="fun('*')"> 
+<input type="button" value="/" onclick="fun('/')"> 
+<input type="button" value="%" onclick="fun('%')"> 
+<br>
+
+<button id="result" style="color: blueviolet;">Result</button>
+    </div>
+
+<script>
+function fun(op){
+            let a=parseInt(  document.getElementById("Num1").value)
+            let b=parseInt(  document.getElementById("Num2").value)
+            // let result = eval(a+ op +b)
+            // document.getElementById('result').innerHTML = `Result: = <b> ${result}</b>`
+
+            let res=document.getElementById('result')
+            // if(op=='+') res.innerHTML=`Result: = <b> ${a+b}</b>`
+            // else if(op=='-') res.innerHTML=a-b 
+            // else if(op=='*') res.innerHTML=a*b 
+            // else if(op=='/') res.innerHTML=a/b 
+            // else if(op=='%') res.innerHTML=a%b 
+            // else  res.innerHTML="invalid operator"
+        
+                switch(op){
+                    case '+':res.innerHTML=`Result: = <b> ${a+b}</b>`;break
+                    case '-':res.innerHTML=`Result: = <b> ${a-b}</b>`;break
+                    case '*':res.innerHTML=`Result: = <b> ${a*b}</b>`;break
+                    case '/':res.innerHTML=`Result: = <b> ${a/b}</b>`;break
+                    case '%':res.innerHTML=`Result: = <b> ${a%b}</b>`;break
+                    default:res.innerHTML=`invalid operator`;break
+                }
+
+        }
+
+</script>
+</body>
+</html> 

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">Enter Radius</label>
+    <input type="text" id="radius"><br/>
+    <button type="button" onclick="findArea()">Find area</button><br/>
+    <div id="div1" class="abc"></div>
+    <script>
+        function findArea(){
+            let r=document.getElementById('radius').value
+            let area = Math.PI*r*r
+        document.querySelector('div').innerHTML = `Area of radius ${r} circle is = <B>${Number(area).toFixed(2)}</B>`
+       
+    
+    }
+    </script>
+</body>
+</html>

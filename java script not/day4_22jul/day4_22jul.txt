@@ -1,0 +1,121 @@
+
+operators - 
+a+b => + (operator) , (a,b => operands)
+1. arthimetic => + , - ,* , /, % , **
+2. relational / comparison =>, >, <, >=,<=, ==, !=, ===, !==
+3. logical operator => and (&&) , or (||) , not (!)
+4. assignment operator => = , +=, -=, *=, /=,%=, **=
+5. increment and decrement - ++ ,--
+6.ternary/conditional operator - ?:
+7. nullish operator - ??
+8. typeof() and instanceof 
+
+three categories -
+1. unary - 1 operands (++,--,typeof(),!)
+2. binary - 2 operands
+3. ternary -3 operands (?:)
+
+
+120/10 => 12
+120%10 => 0
+123%10 => 3
+2%5 = 2
+2/5 = 0.4
+2**3 => 2 power 3  => 2*2*2 => 8
+3**2 => 3*3= 9 
+
+relational -  return true or false
+let a=10, b= 5 
+console.log(a>b) //true 
+console.log(5 < 20) //true
+console.log(5 < 5) //false
+console.log(5 <= 5) //true
+console.log(5 == 5) //true
+console.log(5 == "5") //true   num == string  (check value only)
+console.log(5 === "5") //false (Checks value and datatype)
+console.log(5 != 4) //true 
+console.log(5 != 5) //false  
+console.log(5 !== "15") //true  
+
+===================================================
+logical operator - 
+A           B       A && B          A||B
+F           F          F            F
+F           T          F            T
+T           F          F            T
+T           T          T            T
+
+let n1=5,n2=10
+let result = n1<=5 && n2==10
+
+A       !A
+T       F
+F       T
+
+True - any nonzero value - 10 , 10.20, "hello" , true , "0","false" etc.
+False - false , 0 
+
+let a = 20
+console.log(!a) // !(20)//!(true)=> false
+==============================================================
+assignment operator - R to L 
+
+let n1 = 10
+n1 = n1 + 5 // n1 = 15 (n1 +=5 )
+console.log(n1)
+n1 = n1-2 //(n1 -=2) => 13
+n1 = n1*2 //(n1 *=2) =>26
+n1 = n1/13 // (n1 /=13)=> 2
+n1 =  n1 % 3 // (n1 %=3) => 2
+n1 = n1 ** 3 // n1 **=3 => 8 
+
+==================================================================
+increment and decrement operator - ++ ,-- (++ => increase by 1 , -- => decrease by 1)
+
+postfix - a++  ,a-- (use value and then increase/decrease it in the memory)
+prefix - ++a ,--a (increase/decrease first then use it further)
+
+let x = 5 
+let y //undefined
+y = x++ //y=5,x=6
+console.log(`x=${x} and y=${y}`)
+
+let x = 5 
+let y,z //undefined
+y = ++x //x=6 ,y=6
+z= x-- //z=6 ,x =5
+console.log(`x=${x} and y=${y}`)
+
+===============================================
+ternary operator -  ?:
+
+condition ? true : false 
+
+let n1=5,n2=3
+n1>n2 ? console.log(`${n1} is greater`) : console.log(`${n2} is greater`)
+
+
+===================================================
+decision making stmt  - 
+1. simple if  - condition true 
+2. if else  
+3. nested if 
+4. else if ladder 
+
+
+1. simple if -
+if(condition){
+    //true block 
+}
+
+if(condition)
+//true stmt 
+====================================
+convert string to number  - 
+parseInt() - 12
+parseFloat() - 12.20
+
+Number() - 12 , 12.90
+=======================================================
+check no zero 
+else 

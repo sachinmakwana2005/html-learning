@@ -1,0 +1,73 @@
+keyword 
+variable 
+event 
+user defined function 
+
+=======================================
+event - action 
+button ---> click ---> alert()
+
+=================================================
+keywords - reserved words, meaning is fixed 
+small letter 
+===========================================
+user defined function  -  
+
+function definition/body
+function printhello(){
+    //block 
+}
+
+function call - printhello()
+
+=======================================
+variable  - container to store value 
+
+var id   //declare 
+var name = "Harshita" //declare and initialization
+var num = 5 //number
+var isActive = true //boolean
+var marks = 90.98 //number
+var isMarried= null //object
+
+var id //value=undefined and datatype=undefined
+var name = "Harshita" // value=harshita and datatype=string
+
+undefined vs null 
+undefined - value is not defined 
+null - value is nothing
+
+var name = "Harshita" 
+name = 'abc' //string
+name=10 //number
+name=null //null 
+
+C - ANSI C 
+
+Javascript Standard - ECMA Script 
+ES5 
+ES6 / ES2015 
+
+getElementById 
+parseInt 
+querySelector 
+
+ES6 -
+let keyword  - never hoist
+
+var                            let                               const
+ES5                            ES6                                 ES6
+variable                       variable                          constant (fixed value)
+hoist                          never hoist                        never hoist
+function scope                 block scope                        block scope 
+redeclaration allowed           not allowed                        declarations must be initialized
+
+area of circle - 
+PI*R*R 
+PI=3.14 
+==========================================
+operators 
+function
+nodejs
+
+

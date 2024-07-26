@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="num 1"> Enter num1</label>
+    <input type="text" id="num1">
+    <label for="num2 ">Enter num2</label>
+    <input type="text" id="num2"> <br>
+    
+    <input type="button" value="+" onclick="Plus()">
+    <input type="button" value="-" onclick="siko()"> 
+    <input type="button" value="*" onclick="malti()">
+    <input type="button" value="/" onclick="book()"> <br>
+
+    <button type="button" id="result">result</button>
+
+    <script>
+        function plasu(){
+            let a =Number(document.getElementById('num1').value)
+            let b =Number(document.getElementById('num2').value)
+
+            let sum = a+b
+
+            document.getElementById('result').innerHTML=`Result=${sum}`
+        }
+        function siko(){
+            let a =Number(document.getElementById('num1').value)
+            let b =Number(document.getElementById('num2').value)
+
+            let sum = a-b
+
+            document.getElementById('result').innerHTML=`Result=${sum}`
+        }
+        function malti (){
+            let a =Number(document.getElementById('num1').value)
+            let b =Number(document.getElementById('num2').value)
+
+            let sum = a*b
+
+            document.getElementById('result').innerHTML=`Result=${sum}`
+        }
+        function book (){
+            let a =Number(document.getElementById('num1').value)
+            let b =Number(document.getElementById('num2').value)
+
+            let sum = a/b
+
+            document.getElementById('result').innerHTML=`Result=${sum}`
+        }
+        
+    </script>
+</body>
+</html>

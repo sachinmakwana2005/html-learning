@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894ye6qwd5i5+u1t9qydvdihzoppsiiqn/+/3e7jo4eag7tubfwgurmq==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KY4oAwR28hhvZFc9mV1He7XvDfbm6JghZn0z7eRGz8KwFr1IjNUnnJ9rHoovHyvI8BrTp8FbikEztgwKt0TpKA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>DP Shops</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"><h1>SACHIN SHOP</h1></div>
+        <ul class="menu">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Fashion</a></li>
+            <li><a href="#">Account</a></li>
+            <li><a href="#">Shops</a></li>
+        </ul>
+        <!-- for responsive button -->
+        <div class="menu-btn">
+            <i class="fa fa-bars"></i>
+        </div>
+    </nav>
+    <section class="content">
+        <h1>New Arrivals for Men & Women</h1>
+        <p>Get the best women fashion arrivals</p>
+        <button>Shop Now</button>
+    </section>
+
+    <h1 class="pheding">Our Latest Products</h1>
+
+    <section class="sec">
+        <div class="products">
+            <!--Card start-->
+            <div class="card">
+                <div class="img"><img src="lady sandal.jpeg" alt="Lady Sandal"></div>
+                <div class="desc">Women</div>
+                <div class="title">Lady Sandal</div>
+                <div class="box">
+                    <div class="price">$50</div>
+                    <button class="btn">Buy Now</button>
+                </div>
+            </div>
+            <!-- card end-->
+            <!--Card start-->
+            <div class="card">
+                <div class="img"><img src="nike shoe.jpeg" alt="Nike Shoe"></div>
+                <div class="desc">Men</div>
+                <div class="title">Nike Shoe</div>
+                <div class="box">
+                    <div class="price">$80</div>
+                    <button class="btn">Buy Now</button>
+                </div>
+            </div>
+            <!-- card end-->
+            <!--Card start-->
+            <div class="card">
+                <div class="img"><img src="leptop.jpeg" alt="Laptop Bag"></div>
+                <div class="desc">Men</div>
+                <div class="title">Laptop Bag</div>
+                <div class="box">
+                    <div class="price">$100</div>
+                    <button class="btn">Buy Now</button>
+                </div>
+            </div>
+            <!-- card end-->
+            <!--Card start-->
+            <div class="card">
+                <div class="img"><img src="travel.jpeg" alt="Bag for Traveling"></div>
+                <div class="desc">Travel</div>
+                <div class="title">Bag For Traveling</div>
+                <div class="box">
+                    <div class="price">$56</div>
+                    <button class="btn">Buy Now</button>
+                </div>
+            </div>
+            <!-- card end-->
+            <!--Card start-->
+            <div class="card">
+                <div class="img"><img src="lady bag.jpeg" alt="Lady Bag"></div>
+                <div class="desc">Women</div>
+                <div class="title">Lady Bag</div>
+                <div class="box">
+                    <div class="price">$99</div>
+                    <button class="btn">Buy Now</button>
+                </div>
+            </div>
+            <!-- card end-->
+            <!--Card start-->
+            <div class="card">
+                <div class="img"><img src="sandal1.jpeg" alt="Lady Sandal"></div>
+                <div class="desc">Women</div>
+                <div class="title">Lady Sandal</div>
+                <div class="box">
+                    <div class="price">$67</div>
+                    <button class="btn">Buy Now</button>
+                </div>
+            </div>
+            <!-- card end-->
+            <!--Card start-->
+            <div class="card">
+                <div class="img"><img src="watch.jpeg" alt="Men's Watch"></div>
+                <div class="desc">Men</div>
+                <div class="title">Men's Watch</div>
+                <div class="box">
+                    <div class="price">$36</div>
+                    <button class="btn">Buy Now</button>
+                </div>
+            </div>
+            <!-- card end-->
+            <!--Card start-->
+            <div class="card">
+                <div class="img"><img src="women watch.jpeg" alt="Women's Watch"></div>
+                <div class="desc">Women</div>
+                <div class="title">Women's Watch</div>
+                <div class="box">
+                    <div class="price">$45</div>
+                    <button class="btn">Buy Now</button>
+                </div>
+            </div>
+            <!-- card end-->
+                        <!--Card start-->
+            <div class="card">
+                <div class="img"><img src="sandal1.jpeg" alt="Lady Sandal"></div>
+                <div class="desc">Women</div>
+                <div class="title">Lady Sandal</div>
+                <div class="box">
+                    <div class="price">$67</div>
+                    <button class="btn">Buy Now</button>
+                </div>
+            </div>
+            <!-- card end-->
+        </div>
+    </section>
+
+    <footer>
+        <p>Copyrights at <a href="">SACHIN SHOP</a></p>
+    </footer>
+
+    <!-- Jquery-->
+    <script>
+        $(".menu-btn").click(function(){
+            $(".menu").toggleClass("active");
+            $(".menu-btn i").toggleClass("fa-bars fa-times");
+        });
+    </script>
+</body>
+</html>

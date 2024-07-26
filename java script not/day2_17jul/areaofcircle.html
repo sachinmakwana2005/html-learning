@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" onclick="findArea()">Find area</button><br/>
+    <div id="div1" class="abc"></div>
+    <script>
+        function findArea(){
+            let r=window.prompt("enter radius",1) //string value "2"
+            const PI=3.14
+            // PI=2.15 //TypeError: Assignment to constant variable.
+            let area = PI*r*r
+            // alert(`Area of radius ${r} circle is = ${area}`)
+        //    console.log(document.querySelector('div').innerHTML)
+
+        document.querySelector('div').innerHTML = `Area of radius ${r} circle is = <B>${area}</B>`
+        // document.querySelector('div').innerText = `Area of radius ${r} circle is = <B>${area}</B>`
+      // document.querySelector('div').textContent = `Area of radius ${r} circle is = <B>${area}</B>`
+     
+    
+    }
+    </script>
+</body>
+</html>

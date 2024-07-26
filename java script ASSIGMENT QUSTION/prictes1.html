@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2</title>
+</head>
+<body>
+    <label for="num1"> enter num 1</label>
+    <input type="text" id="num1">
+    <label for="num2">center num 2</label>
+    <input type="text" id="num2"> <br>
+
+    <input type="button" value="+" onclick="school()">
+    <input type="button" value="-" onclick="siko()">
+    <input type="button" value="*" onclick="malti()">
+    <input type="button" value="/" onclick="book()"> <br>
+
+    <button type="btn" id="result">result</button>
+    
+    <script>
+        function school(){
+            let a =Number(document.getElementById('num1').value)
+            let b =Number(document.getElementById('num2').value)
+
+            let sum =a+b
+
+            document.getElementById('result').innerHTML= `result=${sum}`
+        }
+        function siko(){
+            let a =Number(document.getElementById('num1').value)
+            let b =Number(document.getElementById('num2').value)
+
+            let sum =a-b
+
+            document.getElementById('result').innerHTML= `result=${sum}`
+        }
+        function malti (){
+            let a =Number(document.getElementById('num1').value)
+            let b =Number(document.getElementById('num2').value)
+
+            let sum =a*b
+
+            document.getElementById('result').innerHTML= `result=${sum}`
+        }
+        function malti (){
+            let a =Number(document.getElementById('num1').value)
+            let b =Number(document.getElementById('num2').value)
+
+            let sum =a*b
+
+            document.getElementById('result').innerHTML= `result=${sum}`
+        }
+        function book (){
+            let a =Number(document.getElementById('num1').value)
+            let b =Number(document.getElementById('num2').value)
+
+            let sum =a/b
+
+            document.getElementById('result').innerHTML= `result=${sum}`
+        }
+
+    </script>
+</body>
+</html>

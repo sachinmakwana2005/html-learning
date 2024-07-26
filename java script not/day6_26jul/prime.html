@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .error{color:red}
+        .success{color:green}
+    </style>
+</head>
+<body>
+    <input type="text" id="num">
+    <button type="button" id="btn">Check Prime</button><br/>
+    <div id="res"></div>
+
+    <script>
+        document.getElementById('btn').onclick=function(){
+            let num=document.getElementById('num').value
+            let res=document.querySelector('#res')
+            let flag=false
+            if(num==''){
+                res.innerHTML="Please enter number "
+                res.className='error'
+            }
+            else {
+                res.innerHTML=''
+                res.className='success'
+                for(let i=2;i<num;i++){ //43125
+                    if(num%i==0){ flag=true;break}
+                }
+                if(flag==false){ res.innerHTML=`${num} is prime`}
+                else { res.innerHTML=`${num} is not prime`}
+            }
+        }
+    </script>
+</body>
+</html>

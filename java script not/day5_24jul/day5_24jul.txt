@@ -1,0 +1,76 @@
+let  -  block scope -
+
+function fun(){
+
+    if(){
+        let a=10
+    }
+}
+===============================================
+loops - repeatition 
+
+print 1 to 1000 
+document.write(1)
+
+1. initialization - num = 1
+2. condition -  num<=100 
+3. print  - num
+4. update stmt - num++
+
+1. pretested / entry controlled -  first check the condition if it is true execute loop block untill it become false - while loop , for loop 
+
+2. posttested / exit controlled - execute the stmt first then check the condition if it is true execute loop block untill it become false - do while loop
+
+while loop -
+initialization
+while(condition){
+    //loop block 
+    //update stmt
+}
+
+let num = 1
+while(num<=100){ 
+    console.log(num)
+    num++
+}
+
+num             condition               print                   update stmt 
+1                    1<=100(T)           1                           num=2
+                     2<=100(T)           2                            num=3
+                     .
+                     .
+                     .
+                     .
+                     100<=100(T)          100                       num=101
+                     101<=100(F)            
+
+for(initialization ;  condition ; update stmt){
+    //loop block
+}
+condition---> loop block --> update stmt 
+                                    ----> condition --> loop block --> update stmt
+
+========================================================
+reverse number -
+123 => 321 
+
+
+123 % 10 => 3
+456 % 10 => 6
+321 % 10 => 1
+320 % 10 => 0
+
+456 / 10 =>parseInt(45.6) => 45
+
+palindrome -> 
+
+==============================================================
+do while 
+break 
+continue 
+switch 
+eval()
+=====================================================
+Math.pow()
+
+
